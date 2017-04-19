@@ -7,8 +7,8 @@ namespace StringComparison
     {
         static void Main(string[] args)
         {
-            string firstString = "2C 35П 2Э";
-            string secondString = "15П 1Э";
+            string firstString = "1С 3П";
+            string secondString = "6С 2П";
 
             Console.WriteLine($"{firstString} > {secondString} {Comparison(firstString, secondString)}");
 
@@ -31,8 +31,8 @@ namespace StringComparison
             
                        for (int i = 0; i < 2; i++)
                        {
-                           if (s1[i] > s2[i]) { return true; }
-                           if (s1[i] < s2[i]) { return false; }
+                           if (s1[i] >= s2[i]) { return true; }
+                           if (s1[i] <= s2[i]) { return false; }
                        }
                
             return false;

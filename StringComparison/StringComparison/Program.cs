@@ -32,7 +32,7 @@ namespace StringComparison
                        for (int i = 0; i < 2; i++)
                        {
                            if (s1[i] >= s2[i]) { return true; }
-                           if (s1[i] <= s2[i]) { return false; }
+                           if (s1[i] < s2[i]) { return false; }
                        }
                
             return false;
